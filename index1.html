@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, pink 0%, white 50%, lightpink 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            width: 400px;
+        }
+        .form-header {
+            background: linear-gradient(to right, #ff6b9d, #ff8fab);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px 10px 0 0;
+
+        }
+        .form-header h2 {
+            font-size: 28px;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        .form-header p {
+            opacity: 0.9;
+            font-size: 15px;
+        }
+        form {
+            background-color: lightpink;
+            border-radius: 0 0 10px 10px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            position: relative;
+        }
+
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            position: relative; /* allow absolute-positioned icon inside */
+        }
+        .input-group label {
+            font-weight: bold;
+            color: #555;
+        }
+        .input-group input {
+            padding: 10px 10px 10px 40px; /* leave space for the icon */
+            border: none;
+            border: 2px solid #e1e5ee;
+            border-radius: 5px;
+            background-color: white;
+        }
+        .input-group i {
+            position: absolute;
+            left: 12px;
+            top: 70%;
+            transform: translateY(-50%);
+            color: #8E54E9;
+            font-size: 16px;
+        }
+        button {
+            padding: 12px;
+            background: linear-gradient(to right, #ff6b9d, #ff8fab);
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background: linear-gradient(to right, #ff8fab, #ff6b9d);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-header">
+            <h2>Create Account</h2>
+            <p>Join our community today</p>
+        </div>
+        <form action="">
+            <div class="input-group">
+                <label for="fullName">Full Name</label>
+                <i class="fa-solid fa-user"></i>
+                <input type="text" placeholder="Enter your full name">
+            </div>
+            <div class="input-group">
+                <label for="email">Email Address</label>
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" placeholder="Enter your email">
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="Enter your password">
+            </div>
+            <div class="input-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="Enter your comfirm password">
+            </div>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>

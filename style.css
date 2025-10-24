@@ -1,0 +1,166 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(135deg, pink 0%, white 50%, lightpink 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+form{
+    width: 100%;
+    max-width: 450px;
+    background-color: lightpink;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+form img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 20px auto;
+    border: 3px solid palevioletred;
+}
+
+form h2{
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+form p{
+    text-align: center;
+    color: #666;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+.input-group{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 18px;
+}
+
+.name-group{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.name-group label{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #333;
+}
+
+.name-group input{
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 2px solid palevioletred;
+    font-size: 14px;
+    width: 100%;
+}
+
+.form-group{
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #333;
+}
+
+.form-group input{
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 2px solid palevioletred;
+    font-size: 14px;
+    width: 100%;
+}
+
+.forget{
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.forget a{
+    text-decoration: none;
+    color: #666;
+    font-size: 14px;
+}
+
+.forget a:hover{
+    color: palevioletred;
+}
+
+.btn{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: linear-gradient(135deg, coral, palevioletred);
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.register-link{
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}
+
+.register-link a{
+    text-decoration: none;
+    color: palevioletred;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.register-link a:hover{
+    text-decoration: underline;
+}
+@media (max-width: 480px) {
+    form{
+        padding: 20px;
+        max-width: 90%;
+    }
+    
+    .input-group{
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    form img{
+        width: 80px;
+        height: 80px;
+    }
+    
+    form h2{
+        font-size: 20px;
+    }
+}
